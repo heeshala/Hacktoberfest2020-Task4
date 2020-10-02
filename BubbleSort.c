@@ -3,7 +3,8 @@
 
 int main()
 {
-    bool swap;
+    int swap;
+    int temp;
     int n=5,j;
     int arr[5]={58,89,71,35,6};
     
