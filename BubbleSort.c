@@ -1,29 +1,34 @@
-#include <studio.h>
-
+#include <stdio.h>
 
 int main()
 {
-    bool swap;
-    int n=5,j;
-    int arr[5]={58,89,71,35,6};
-    
-    
-    do{
-        swap=false;
-        for(j=0;j<n;j++)
-        {
-            if (arr[j]>arr[j-1]);
-            {
-                temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp
-                swap=false;
-            }
-        }
-    }while(swap);
-    
-    for(m=0;m<n;m--)
-        {
-            printf("%s ",arr[l]);
-        }
+  int array[100], n, c, d, swap;
+
+  printf("Enter number of elements\n");
+  scanf("%d", &n);
+
+  printf("Enter %d integers\n", n);
+
+  for (c = 0; c < n; c++)
+    scanf("%d", &array[c]);
+
+  for (c = 0 ; c < n - 1; c++)
+  {
+    for (d = 0 ; d < n - c - 1; d++)
+    {
+      if (array[d] > array[d+1]) /* For decreasing order use < */
+      {
+        swap       = array[d];
+        array[d]   = array[d+1];
+        array[d+1] = swap;
+      }
+    }
+  }
+
+  printf("Sorted list in ascending order:\n");
+
+  for (c = 0; c < n; c++)
+     printf("%d\n", array[c]);
+
+  return 0;
 }
