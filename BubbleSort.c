@@ -7,6 +7,7 @@ int main()
     int n=5,j;
     int arr[5]={58,89,71,35,6};
     
+    /* bubble sort */
     
     do{
         swap=false;
