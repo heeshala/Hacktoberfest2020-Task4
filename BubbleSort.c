@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 
 
 int main()
@@ -26,4 +26,5 @@ int main()
         {
             printf("%s ",arr[l]);
         }
+    return 0;
 }
