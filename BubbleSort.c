@@ -1,29 +1,34 @@
-#include <studio.h>
-
-
+#include <stdio.h>
 int main()
 {
-    bool swap;
-    int n=5,j;
-    int arr[5]={58,89,71,35,6};
+
+    int array[100],n,i,j,temp;
     
+    printf("Enter the number elements in array\n");
+    scanf("%d",&n);
     
-    do{
-        swap=false;
-        for(j=0;j<n;j++)
+    printf("Enter the elements of the array\n");
+    for(i=0;i<n;i++)
+    scanf("%d",&array[i]);
+    
+    printf("Before sorting array\n");
+    for(i=0;i<n;i++)
+    printf("%d",array[i]);
+    
+    for(i=0;i<n-1;i++)
+    {
+        for(j=0;j<n-i-1;j++)
         {
-            if (arr[j]>arr[j-1]);
+            if(array[j]>array[j+1])
             {
-                temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp
-                swap=false;
+                temp=array[j];
+                array[j]=array[j+1];
+                array[j+1]=temp;
             }
         }
-    }while(swap);
-    
-    for(m=0;m<n;m--)
-        {
-            printf("%s ",arr[l]);
-        }
+    }
+    printf("\nAfter sorting the array\n");
+    for(i=0;i<n;i++)
+        printf("%d",array[i]);
+    return 0;
 }
