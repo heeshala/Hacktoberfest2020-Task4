@@ -5,8 +5,8 @@ int main()
 {
     bool swap;
     int n=5,j;
-    int arr[5]={58,89,71,35,6};
-    
+    int arr[5]={58,89,71,35,6}; //
+    int m; // m
     
     do{
         swap=false;
@@ -24,6 +24,6 @@ int main()
     
     for(m=0;m<n;m--)
         {
-            printf("%s ",arr[l]);
+            printf("%d ",arr[l]); // int %d
         }
 }
