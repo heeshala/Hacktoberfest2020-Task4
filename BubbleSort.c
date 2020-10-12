@@ -1,10 +1,10 @@
-#include <studio.h>
+#include <stdio.h>
 
 
 int main()
 {
     bool swap;
-    int n=5,j;
+    int n=5,j,temp=0;
     int arr[5]={58,89,71,35,6};
     
     
@@ -16,7 +16,7 @@ int main()
             {
                 temp=arr[j];
                 arr[j]=arr[j+1];
-                arr[j+1]=temp
+                arr[j+1]=temp;
                 swap=false;
             }
         }
@@ -24,6 +24,6 @@ int main()
     
     for(m=0;m<n;m--)
         {
-            printf("%s ",arr[l]);
+            printf("%s ",arr[1]);
         }
 }
