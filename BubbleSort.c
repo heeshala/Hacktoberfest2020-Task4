@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include<stdlib.h>
+#include<stdbool.h>
 
 
 int main()
 {
     bool swap;
-    int n=5,j,temp=0;
+    int m,n=5,j,temp=0;
     int arr[5]={58,89,71,35,6};
     
     
