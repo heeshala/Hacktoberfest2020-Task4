@@ -1,11 +1,11 @@
-#include <studio.h>
+#include <stdio.h>
 
 
 int main()
 {
     bool swap;
     int n=5,j;
-    int arr[5]={58,89,71,35,6};
+    int arr[5]={58,89,71,35,6};//declaring array of 5 elements
     
     
     do{
@@ -26,4 +26,5 @@ int main()
         {
             printf("%s ",arr[l]);
         }
+        return 0;
 }
