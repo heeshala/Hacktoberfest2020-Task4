@@ -1,29 +1,23 @@
-#include <studio.h>
-
-
-int main()
+//create swap function 
+void swap(int* a, int* b)
 {
-    bool swap;
-    int n=5,j;
-    int arr[5]={58,89,71,35,6};
-    
-    
-    do{
-        swap=false;
-        for(j=0;j<n;j++)
-        {
-            if (arr[j]>arr[j-1]);
-            {
-                temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp
-                swap=false;
-            }
-        }
-    }while(swap);
-    
-    for(m=0;m<n;m--)
-        {
-            printf("%s ",arr[l]);
-        }
+//implement swap function
+int temp = *a;
+*a = *b;
+*b = temp;
 }
+
+void sort(int arrayofval[], int n)
+{
+int burst = 0;
+do
+{
+  for(int i=0, burst = 0; i < n; i++)
+  if(arrayofval[i] > arrayofval[i+1])
+  {
+  swap(&arrayofval[i], &arrayofval[i+1]);
+  burst++; 
+  }
+}
+while(burst != 0);
+return; 
