@@ -1,4 +1,5 @@
-#include <studio.h>
+#include <stdio.h>
+#include <stdbool.h>
 
 
 int main()
@@ -14,16 +15,16 @@ int main()
         {
             if (arr[j]>arr[j-1]);
             {
-                temp=arr[j];
+                int temp=arr[j];
                 arr[j]=arr[j+1];
-                arr[j+1]=temp
+                arr[j+1]=temp;
                 swap=false;
             }
         }
     }while(swap);
     
-    for(m=0;m<n;m--)
+    for(int m=0;m<n;m++)
         {
-            printf("%s ",arr[l]);
+            printf("%d ",arr[m]);
         }
 }
