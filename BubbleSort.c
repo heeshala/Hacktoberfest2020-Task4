@@ -4,6 +4,7 @@
 int main()
 {
     bool swap;
+    int TEMP;
     int n=5,j;
     int arr[5]={58,89,71,35,6};
     
@@ -16,7 +17,7 @@ int main()
             {
                 temp=arr[j];
                 arr[j]=arr[j+1];
-                arr[j+1]=temp
+                arr[j+1]=TEMP
                 swap=false;
             }
         }
