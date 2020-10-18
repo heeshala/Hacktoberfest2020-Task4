@@ -1,12 +1,11 @@
 #include <studio.h>
-
+#include<conio.h>
 
 int main()
 {
     bool swap;
     int n=5,j;
-    int arr[5]={58,89,71,35,6};
-    
+    int arr[5]={58,89,71,35,6}; //declare the array
     
     do{
         swap=false;
