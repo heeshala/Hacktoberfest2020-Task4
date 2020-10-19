@@ -4,7 +4,7 @@
 int main()
 {
     bool swap;
-    int n=5,j;
+    int n=5,j,m;
     int arr[5]={58,89,71,35,6};
     
     
