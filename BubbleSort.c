@@ -1,6 +1,9 @@
-#include <studio.h>
-
-
+#include <stdio.h>
+#include<math.h>
+typedef enum{
+    false,true
+}
+bool;
 int main()
 {
     bool swap;
@@ -12,18 +15,19 @@ int main()
         swap=false;
         for(j=0;j<n;j++)
         {
-            if (arr[j]>arr[j-1]);
+            if (arr[j]>arr[j+1])
             {
-                temp=arr[j];
+               int temp=arr[j];
                 arr[j]=arr[j+1];
-                arr[j+1]=temp
-                swap=false;
+                arr[j+1]=temp;
+                swap=true;
             }
         }
     }while(swap);
     
-    for(m=0;m<n;m--)
+    for(j=0;j<n;j++)
         {
-            printf("%s ",arr[l]);
+            printf("%d ",arr[j]);
         }
+        return 0;
 }
