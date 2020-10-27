@@ -22,7 +22,7 @@ int main()
         }
     }while(swap);
     
-    for(m=0;m<n;m--)
+    for(m=0;m<n;m++)
         {
             printf("%s ",arr[l]);
         }
