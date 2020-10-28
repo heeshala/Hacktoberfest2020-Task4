@@ -24,7 +24,7 @@ int main()
     
     for(m=0;m<n;m--)
         {
-            printf(The bubble sort answer is: );
+            printf(The bubble sort answer is....: );
             scanf(" d%",&arr[1]);
       
         }
