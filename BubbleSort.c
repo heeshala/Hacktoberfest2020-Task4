@@ -10,20 +10,20 @@ int main()
     
     do{
         swap=false;
-        for(j=0;j<n;j++)
+        for(j=0;j<n-1;j++)
         {
             if (arr[j]>arr[j-1]);
             {
                 temp=arr[j];
                 arr[j]=arr[j+1];
-                arr[j+1]=temp
+                arr[j+1]=temp;
                 swap=false;
             }
         }
     }while(swap);
     
-    for(m=0;m<n;m--)
+    for(j=0;j<n;j++)
         {
-            printf("%s ",arr[l]);
+            printf("%d ",arr[j]);
         }
 }
