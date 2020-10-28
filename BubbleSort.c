@@ -16,7 +16,7 @@ int main()
             {
                 temp=arr[j];
                 arr[j]=arr[j+1];
-                arr[j+1]=temp
+                arr[j+1]=temp;
                 swap=false;
             }
         }
@@ -24,6 +24,8 @@ int main()
     
     for(m=0;m<n;m--)
         {
-            printf("%s ",arr[l]);
+            printf(The bubble sort answer is....: );
+            scanf(" d%",&arr[1]);
+      
         }
 }
