@@ -24,6 +24,8 @@ int main()
     
     for(m=0;m<n;m--)
         {
-            printf("%s ",arr[l]);
+            printf(The answer: );
+            scanf(" d%",&arr[1]);
+      
         }
 }
