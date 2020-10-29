@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 
 
 int main()
@@ -24,6 +24,6 @@ int main()
     
     for(m=0;m<n;m--)
         {
-            printf("%s ",arr[l]);
+            printf("%s ",arr[m]);
         }
 }
