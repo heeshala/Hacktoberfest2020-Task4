@@ -20,7 +20,8 @@ int main()
                 swap=false;
             }
         }
-    }while(swap);
+    }
+    while(swap);
     
     for(m=0;m<n;m--)
         {
